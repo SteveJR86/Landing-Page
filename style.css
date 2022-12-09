@@ -21,11 +21,16 @@ body {
 
 header {
   background-color: #bcb6a8;
+  /* position: fixed keeps the header fixed at the top of the page as you scroll */
   position: fixed;
+  /* height gave a bit more space between header and the rest*/
   height: 3rem;
+  /* width was needed to make the header bar stretch across the full page */
   width: 100%;
   /* for some reason margin-top on main moves this down as well, so this moves it back up */
   margin-top: -3rem;
+  /* padding added to give a bit of space either side, but only worked on the left I guess
+  because of absolute positioning on the ul */
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -35,9 +40,10 @@ h1 {
 }
 
 ul {
+  /* this was used to bring the ul onto the same line as the heading and move it across to the right
+  but still with a bit of space from the edge since padding-right up above didn't work */
   position: absolute;
   top: 0;
-  /* 10px in from the edge to give a bit of space */
   right: 10px;
 }
 
@@ -49,14 +55,18 @@ li {
 main {
   /* this margin centers stuff on the page */
   margin: auto;
-  /* this is needed to move the content below the header */
+  /* this is needed to move the content below the header and keep it above the footer */
   margin-top: 3rem;
   margin-bottom: 1.5rem;
+  /* max-width stops the text and pictures from going crazy wide */
   max-width: 800px;
+  /* I wanted to keep everything on the main bit of the page centered */
   text-align: center;
 }
 
 img {
+  /* I guess as the name suggests text-align only works on text, so had to add margin
+  to both sides of the image */
   margin-left: auto;
   margin-right: auto;
 }
@@ -67,8 +77,10 @@ img {
 
 footer {
   background-color: #bcb6a8;
+  /* this fixes the footer to the bottom of the page */
   position: fixed;
-  bottom: -1px;
+  bottom: 0px;
+  /* height and width make it full width and give it a bit of space in the height */
   height: 1.5rem;
   width: 100%;
   text-align: center;
