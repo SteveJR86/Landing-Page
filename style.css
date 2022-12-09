@@ -1,0 +1,75 @@
+/* CSS Reset Stuff taken from Josh W Comeau */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img, figure {
+  display: block;
+  max-width: 100%;
+}
+
+/* My Styling */
+
+body {
+  background-color: #bcb6a8;
+  color: #de2023;
+}
+
+header {
+  background-color: #bcb6a8;
+  position: fixed;
+  height: 3rem;
+  width: 100%;
+  /* for some reason margin-top on main moves this down as well, so this moves it back up */
+  margin-top: -3rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h1 {
+  color: #434252;
+}
+
+ul {
+  position: absolute;
+  top: 0;
+  /* 10px in from the edge to give a bit of space */
+  right: 10px;
+}
+
+li {
+  /* gets the three links side by side rather than on top of each other */
+  display: inline;
+}
+
+main {
+  /* this margin centers stuff on the page */
+  margin: auto;
+  /* this is needed to move the content below the header */
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+  text-align: center;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form {
+  color: #434252;
+}
+
+footer {
+  background-color: #bcb6a8;
+  position: fixed;
+  bottom: -1px;
+  height: 1.5rem;
+  width: 100%;
+  text-align: center;
+}

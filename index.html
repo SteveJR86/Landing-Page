@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>Landing Page</title>
+</head>
+<body>
+  <header>
+    <h1>Cats Cats Cats!</h1>
+    <nav>
+      <ul>
+        <li><a href="https://www.google.com">Google</a></li>
+        <li><a href="https://www.bing.com">Bing</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Lets look at some pictures of cats</h2>
+    <section class="image-section">
+      <p>Here is a picture of a really cute kitten</p>
+      <figure>
+        <img src="https://placekitten.com/600" alt="kitten pictured with rope ball toy">
+        <figcaption>What a lovely kitten</figcaption>
+      </figure>
+    </section>
+    <section class="form" id="contact">
+      <h2>Learn more about cats by contacting us</h2>
+      <form action ="">
+        <!-- I'm unsure whether labels go before inputs or around inputs -->
+        <label for="name">Enter your Name: </label><input type="text" name="name" required> 
+        <label for="email">Enter your Email: </label><input type="email" name="email" required>
+        <input type="submit" value="Send">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Steve Riley &copy 2022</p>
+  </footer>
+</body>
+</html>
